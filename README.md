@@ -21,7 +21,7 @@ To get started with Zaskify, follow these simple steps:
 
 1. Clone this repository to your local machine:
 ```
-git clone https://github.com/Zrital3265/Zaskify
+git clone https://github.com/Zrital3265/Zaskify.git
 ```
 3. Navigate to the project directory:
 ```
