@@ -3,7 +3,8 @@
 Zaskify is a simple to-do app built with React, TypeScript, and Vite. It offers drag-and-drop functionality for organizing tasks and includes Add, Read, Update, and Delete operations for managing your todos efficiently.
 
 ## Preview:
-![image](https://github.com/Zrital3265/Zaskify/assets/116243106/8f59cc9a-82ef-459f-8ea7-b43c60b7cebe)
+![image](https://github.com/Zrital3265/Zaskify/assets/116243106/4825f119-4d93-4d42-b87b-940348ecbcd2)
+
 
 
 ## Features
