@@ -24,10 +24,12 @@ const TodoTab: React.FC<props> = ({ index, todo, todos, setTodos }) => {
       )
     );
   };
+
   //Delete function
   const handelDelete = (id: number) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
+
   //Edit functionality
   const [edit, setEdit] = useState<boolean>(false);
   const [editTodo, setEditTodo] = useState<string>(todo.todo);
@@ -47,9 +49,9 @@ const TodoTab: React.FC<props> = ({ index, todo, todos, setTodos }) => {
 
   return (
     <Draggable draggableId={todo.id.toString()} index={index}>
-      {(provided) => (
+      {(provided, snapshot) => (
         <form
-          className="todos__single"
+          className={`todos__single ${snapshot.isDragging ? "Drag" : ""}`}
           onSubmit={(e) => handleEdit(e, todo.id)}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
