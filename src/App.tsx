@@ -49,8 +49,10 @@ const App: React.FC = () => {
     }
     // Destination Logic
     if (destination.droppableId === "TodosTabs") {
+      add.isDone = false;
       active.splice(destination.index, 0, add);
     } else {
+      add.isDone = true;
       complete.splice(destination.index, 0, add);
     }
     setcompletedTodos(complete);
